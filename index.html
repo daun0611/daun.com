@@ -12,6 +12,18 @@
         font-weight: normal;
         font-style: normal;
       }
+      .photo-description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: -50%;
+      }
       .footer {
         display: flex;
         flex-direction: column;
@@ -52,22 +64,56 @@
         background-size: cover;
         position: relative;
       }
+      .vedio {
+        width: 100%;
+        height: 100%;
+      }
+      #image1 {
+        background-image: url(./img1.jpg);
+      }
+      #image2 {
+        background-image: url(./img2.jpg);
+      }
+      #image3 {
+        background-image: url(./img3.jpg);
+      }
+      #image4 {
+        background-image: url(./img4.jpg);
+      }
+      #des1 {
+        color: white;
+      }
+      #des2 {
+        color: white;
+      }
+      #des3 {
+        color: white;
+      }
+      #des4 {
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="photo">
         <div id="image1" class="photo-frame">
-          <span id="des1" class="photo-desciption">사진1 설명</span>
+          <span id="des1" class="photo-desciption">PHOTO_1</span>
         </div>
         <div id="image2" class="photo-frame">
-          <span id="des2" class="photo-desciption">사진2 설명</span>
+          <span id="des2" class="photo-desciption">PHOTO_2</span>
         </div>
-        <div id="image3" class="photo-frame">
-          <span id="des3" class="photo-desciption">사진3 설명</span>
+        <div class="photo-frame">
+          <iframe
+            src="https://www.youtube.com/embed/c94qvauXCJM?si=bRGN2WCPq7s949E7"
+            frameborder="0"
+            class="vedio"
+          >
+          </iframe>
+          <!-- <span id="des3" class="photo-desciption">PHOTO_3</span> -->
         </div>
         <div id="image4" class="photo-frame">
-          <span id="des4" class="photo-desciption">사진4 설명</span>
+          <span id="des4" class="photo-desciption">PHOTO_4</span>
         </div>
       </div>
       <div class="footer">
