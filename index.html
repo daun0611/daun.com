@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAUNload</title>
+    <style>
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+      }
+      .f-date {
+        font-size: 15px;
+        font-weight: 50;
+        color: rgb(255, 255, 255);
+      }
+      body {
+        font-family: "LeeSeoyun";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("./background.png");
+      }
+
+      .container {
+        width: 390px;
+        background-color: #18248f;
+        height: 100%;
+      }
+
+      .photos {
+        margin-top: 30px;
+      }
+
+      .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+        background-size: cover;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="photo">
+        <div id="image1" class="photo-frame">
+          <span id="des1" class="photo-desciption">사진1 설명</span>
+        </div>
+        <div id="image2" class="photo-frame">
+          <span id="des2" class="photo-desciption">사진2 설명</span>
+        </div>
+        <div id="image3" class="photo-frame">
+          <span id="des3" class="photo-desciption">사진3 설명</span>
+        </div>
+        <div id="image4" class="photo-frame">
+          <span id="des4" class="photo-desciption">사진4 설명</span>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="f-title">CUTE</p>
+        <p class="f-date">2025.02.09</p>
+      </div>
+    </div>
+  </body>
+</html>
